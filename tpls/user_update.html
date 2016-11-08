@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="/css/user-update.css" />
+	</head>
+	<body>
+		<div class="user-update-container">
+			<h1>用户更新</h1>
+			<div class="input-group">
+				  <label for="">用户名：</label>
+				  <input type="text" class="form-control" placeholder="请输入用户名" ng-model="updateUser.username">
+				</div>
+				
+				<div class="input-group">
+				  <label for="">邮箱：</label>
+				  <input type="text" class="form-control" placeholder="请输入邮箱" ng-model="updateUser.email">
+				</div>
+				<div class="input-group">
+				  <label for="">年龄：</label>
+				  <input type="text" class="form-control" placeholder="请输入年龄" ng-model="updateUser.age">
+				</div>
+		      
+		      <div class="input-group">
+				  <label for="">密码：</label>
+				  <input type="text" class="form-control" placeholder="请输入密码" ng-model="updateUser.password">
+				</div>
+				<button type="button" class="btn btn-default" ng-click="cancel()">取&nbsp;&nbsp;消</button>
+				<button type="button" id="myButton" data-loading-text="Loading..." class="btn btn-primary" autocomplete="off" ng-click="update()">更&nbsp;&nbsp;新</button>
+
+		</div>
+	</body>
+</html>

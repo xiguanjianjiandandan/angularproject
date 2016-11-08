@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="/css/index.css"/>
+		
+	</head>
+	<body>
+		<header>
+			<div class="header-left">
+				<img src="../images/icon_home_logo.png"/>
+				<span>冯煜超后台管理中心</span>
+			</div>
+			<div class="header-right dropdown">
+				<div><span class="glyphicon glyphicon-bell"></span><span class="badge">42</span></div>
+				<div class="icon dropdown-toggle" data-toggle="dropdown"><img src="/images/userIcon.jpg" alt="" class="img-circle"></div>
+				<ul class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="dropdownMenu1">
+				    <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span class="glyphicon glyphicon-user"></span>个人中心</a></li>
+				    <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span class="glyphicon glyphicon-cog"></span>设置</a></li>
+				    <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span class="glyphicon glyphicon-hdd
+glyphicon "></span>退出</a></li>
+				  </ul>
+			</div>
+			
+		</header>
+		<section>
+			<aside>
+				<accordion-panel></accordion-panel>
+			</aside>
+			<div class="content">
+				<ui-view class="{{pageClass}}"></ui-view>
+			</div>
+		</section>		 
+		
+	</body>
+</html>
